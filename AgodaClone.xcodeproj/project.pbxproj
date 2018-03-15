@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6211146205A1DDC005FBC88 /* DurationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6211145205A1DDC005FBC88 /* DurationCell.swift */; };
+		D6211148205A1E1D005FBC88 /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6211147205A1E1D005FBC88 /* PeopleCell.swift */; };
+		D621114A205A1E67005FBC88 /* RatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6211149205A1E67005FBC88 /* RatingCell.swift */; };
+		D621114D205A2359005FBC88 /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D621114C205A2359005FBC88 /* MembersViewController.swift */; };
+		D621114F205A451D005FBC88 /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D621114E205A451D005FBC88 /* InfoModel.swift */; };
+		D6211153205A5677005FBC88 /* MemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6211152205A5677005FBC88 /* MemberCell.swift */; };
+		D6211155205A5686005FBC88 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6211154205A5686005FBC88 /* DescriptionCell.swift */; };
+		D6211157205A5695005FBC88 /* ChildDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6211156205A5695005FBC88 /* ChildDetailCell.swift */; };
+		D6A82A1D2059FF4400C0F095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A82A1C2059FF4400C0F095 /* AppDelegate.swift */; };
+		D6A82A1F2059FF4400C0F095 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A82A1E2059FF4400C0F095 /* ViewController.swift */; };
+		D6A82A222059FF4400C0F095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A82A202059FF4400C0F095 /* Main.storyboard */; };
+		D6A82A242059FF4400C0F095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6A82A232059FF4400C0F095 /* Assets.xcassets */; };
+		D6A82A272059FF4400C0F095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6A82A252059FF4400C0F095 /* LaunchScreen.storyboard */; };
+		D6A82A56205A107B00C0F095 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A82A55205A107B00C0F095 /* LocationCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D6211145205A1DDC005FBC88 /* DurationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationCell.swift; sourceTree = "<group>"; };
+		D6211147205A1E1D005FBC88 /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
+		D6211149205A1E67005FBC88 /* RatingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCell.swift; sourceTree = "<group>"; };
+		D621114C205A2359005FBC88 /* MembersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
+		D621114E205A451D005FBC88 /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
+		D6211152205A5677005FBC88 /* MemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCell.swift; sourceTree = "<group>"; };
+		D6211154205A5686005FBC88 /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		D6211156205A5695005FBC88 /* ChildDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildDetailCell.swift; sourceTree = "<group>"; };
+		D6A82A192059FF4400C0F095 /* AgodaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgodaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A82A1C2059FF4400C0F095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6A82A1E2059FF4400C0F095 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6A82A212059FF4400C0F095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6A82A232059FF4400C0F095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6A82A262059FF4400C0F095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6A82A282059FF4400C0F095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A82A55205A107B00C0F095 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6A82A162059FF4400C0F095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D621114B205A2300005FBC88 /* MemberViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D621114C205A2359005FBC88 /* MembersViewController.swift */,
+				D6211151205A564C005FBC88 /* View */,
+			);
+			path = MemberViewController;
+			sourceTree = "<group>";
+		};
+		D6211150205A4525005FBC88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D621114E205A451D005FBC88 /* InfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6211151205A564C005FBC88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6211152205A5677005FBC88 /* MemberCell.swift */,
+				D6211154205A5686005FBC88 /* DescriptionCell.swift */,
+				D6211156205A5695005FBC88 /* ChildDetailCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6A82A102059FF4400C0F095 = {
+			isa = PBXGroup;
+			children = (
+				D6A82A1B2059FF4400C0F095 /* AgodaClone */,
+				D6A82A1A2059FF4400C0F095 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6A82A1A2059FF4400C0F095 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6A82A192059FF4400C0F095 /* AgodaClone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6A82A1B2059FF4400C0F095 /* AgodaClone */ = {
+			isa = PBXGroup;
+			children = (
+				D6A82A1C2059FF4400C0F095 /* AppDelegate.swift */,
+				D6A82A54205A104D00C0F095 /* MainController */,
+				D6211150205A4525005FBC88 /* Model */,
+				D621114B205A2300005FBC88 /* MemberViewController */,
+				D6A82A232059FF4400C0F095 /* Assets.xcassets */,
+				D6A82A202059FF4400C0F095 /* Main.storyboard */,
+				D6A82A252059FF4400C0F095 /* LaunchScreen.storyboard */,
+				D6A82A282059FF4400C0F095 /* Info.plist */,
+			);
+			path = AgodaClone;
+			sourceTree = "<group>";
+		};
+		D6A82A54205A104D00C0F095 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				D6A82A1E2059FF4400C0F095 /* ViewController.swift */,
+				D6A82A57205A107F00C0F095 /* View */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		D6A82A57205A107F00C0F095 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6A82A55205A107B00C0F095 /* LocationCell.swift */,
+				D6211145205A1DDC005FBC88 /* DurationCell.swift */,
+				D6211147205A1E1D005FBC88 /* PeopleCell.swift */,
+				D6211149205A1E67005FBC88 /* RatingCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6A82A182059FF4400C0F095 /* AgodaClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6A82A2B2059FF4400C0F095 /* Build configuration list for PBXNativeTarget "AgodaClone" */;
+			buildPhases = (
+				D6A82A152059FF4400C0F095 /* Sources */,
+				D6A82A162059FF4400C0F095 /* Frameworks */,
+				D6A82A172059FF4400C0F095 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgodaClone;
+			productName = AgodaClone;
+			productReference = D6A82A192059FF4400C0F095 /* AgodaClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6A82A112059FF4400C0F095 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = EthanLin;
+				TargetAttributes = {
+					D6A82A182059FF4400C0F095 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D6A82A142059FF4400C0F095 /* Build configuration list for PBXProject "AgodaClone" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6A82A102059FF4400C0F095;
+			productRefGroup = D6A82A1A2059FF4400C0F095 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6A82A182059FF4400C0F095 /* AgodaClone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6A82A172059FF4400C0F095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6A82A272059FF4400C0F095 /* LaunchScreen.storyboard in Resources */,
+				D6A82A242059FF4400C0F095 /* Assets.xcassets in Resources */,
+				D6A82A222059FF4400C0F095 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6A82A152059FF4400C0F095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6211157205A5695005FBC88 /* ChildDetailCell.swift in Sources */,
+				D621114A205A1E67005FBC88 /* RatingCell.swift in Sources */,
+				D6211153205A5677005FBC88 /* MemberCell.swift in Sources */,
+				D6A82A56205A107B00C0F095 /* LocationCell.swift in Sources */,
+				D6A82A1F2059FF4400C0F095 /* ViewController.swift in Sources */,
+				D6211155205A5686005FBC88 /* DescriptionCell.swift in Sources */,
+				D621114D205A2359005FBC88 /* MembersViewController.swift in Sources */,
+				D6211148205A1E1D005FBC88 /* PeopleCell.swift in Sources */,
+				D6A82A1D2059FF4400C0F095 /* AppDelegate.swift in Sources */,
+				D6211146205A1DDC005FBC88 /* DurationCell.swift in Sources */,
+				D621114F205A451D005FBC88 /* InfoModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D6A82A202059FF4400C0F095 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6A82A212059FF4400C0F095 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6A82A252059FF4400C0F095 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6A82A262059FF4400C0F095 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6A82A292059FF4400C0F095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D6A82A2A2059FF4400C0F095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6A82A2C2059FF4400C0F095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47R4BK8PQH;
+				INFOPLIST_FILE = AgodaClone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.AgodaClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6A82A2D2059FF4400C0F095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 47R4BK8PQH;
+				INFOPLIST_FILE = AgodaClone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ethan510010.AgodaClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6A82A142059FF4400C0F095 /* Build configuration list for PBXProject "AgodaClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6A82A292059FF4400C0F095 /* Debug */,
+				D6A82A2A2059FF4400C0F095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6A82A2B2059FF4400C0F095 /* Build configuration list for PBXNativeTarget "AgodaClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6A82A2C2059FF4400C0F095 /* Debug */,
+				D6A82A2D2059FF4400C0F095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6A82A112059FF4400C0F095 /* Project object */;
+}

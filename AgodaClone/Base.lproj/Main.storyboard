@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ahQ-q1-U58">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AgodaClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pixta_27372189_M-1024x683" translatesAutoresizingMaskIntoConstraints="NO" id="oh8-8e-hy2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lZY-Ld-WsJ">
+                                <rect key="frame" x="19" y="84" width="337.5" height="255"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="locationCell" id="NDV-tq-FbF" customClass="LocationCell" customModule="AgodaClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="337.5" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NDV-tq-FbF" id="eFa-9x-omH">
+                                            <rect key="frame" x="0.0" y="0.0" width="337.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="uaY-0Z-iVw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="338" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </searchBar>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="durationCell" rowHeight="88" id="P9C-Gw-4QA" customClass="DurationCell" customModule="AgodaClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="337.5" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P9C-Gw-4QA" id="Yo6-im-qkq">
+                                            <rect key="frame" x="0.0" y="0.0" width="337.5" height="87.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="入住日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quP-Jd-Lvw">
+                                                    <rect key="frame" x="32" y="11" width="70" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="退房日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8U-I7-sCJ">
+                                                    <rect key="frame" x="203" y="10" width="70" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="peopleCell" id="Jci-I5-i18" customClass="PeopleCell" customModule="AgodaClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="160" width="337.5" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jci-I5-i18" id="vgY-ro-huY">
+                                            <rect key="frame" x="0.0" y="0.0" width="337.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ratingCell" id="saS-wX-jn4" customClass="RatingCell" customModule="AgodaClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="204" width="337.5" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="saS-wX-jn4" id="xro-tl-Ow9">
+                                            <rect key="frame" x="0.0" y="0.0" width="337.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8B-xI-ZQ9">
+                                <rect key="frame" x="19" y="344" width="337.5" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="搜出好價">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oh8-8e-hy2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Ta-PR-0WK"/>
+                            <constraint firstItem="lZY-Ld-WsJ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="255:667" id="7gy-9I-Cjo"/>
+                            <constraint firstItem="e8B-xI-ZQ9" firstAttribute="top" secondItem="lZY-Ld-WsJ" secondAttribute="bottom" constant="5" id="ECx-0F-cKZ"/>
+                            <constraint firstItem="lZY-Ld-WsJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="GFt-Zr-JLd"/>
+                            <constraint firstItem="oh8-8e-hy2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IDb-PW-vGP"/>
+                            <constraint firstItem="lZY-Ld-WsJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J8L-pM-mCQ"/>
+                            <constraint firstItem="lZY-Ld-WsJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Mla-kZ-LiU"/>
+                            <constraint firstItem="e8B-xI-ZQ9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V6E-jE-vDi"/>
+                            <constraint firstItem="oh8-8e-hy2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cVN-Kg-DrN"/>
+                            <constraint firstItem="oh8-8e-hy2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qvm-GK-M81"/>
+                            <constraint firstItem="e8B-xI-ZQ9" firstAttribute="width" secondItem="lZY-Ld-WsJ" secondAttribute="width" id="rV9-1S-UBX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R48-F2-TPn">
+                        <barButtonItem key="leftBarButtonItem" image="icons8-menu-50" id="01W-TI-tN5"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Twe-UK-nhA">
+                            <view key="customView" contentMode="scaleToFill" id="Cze-Ad-CGg">
+                                <rect key="frame" x="276" y="5.5" width="83" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_" translatesAutoresizingMaskIntoConstraints="NO" id="m5K-Bi-t7r">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="logoView" destination="Cze-Ad-CGg" id="pQ9-N3-SrA"/>
+                        <outlet property="mainTableView" destination="lZY-Ld-WsJ" id="Nbs-jC-YkF"/>
+                        <segue destination="JUC-41-ta0" kind="presentation" identifier="pushMembersView" id="QCh-3x-VRw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="133.5832083958021"/>
+        </scene>
+        <!--入住人數-->
+        <scene sceneID="pvE-I3-mJf">
+            <objects>
+                <viewController id="1Oq-3S-Fbj" customClass="MembersViewController" customModule="AgodaClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WbU-kX-8dC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="noq-bb-8Sw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="542"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="memberCell" rowHeight="70" id="Ibu-XF-MHo" customClass="MemberCell" customModule="AgodaClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ibu-XF-MHo" id="OK6-TA-NTK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHL-tw-6Og">
+                                                    <rect key="frame" x="219" y="19" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="➖"/>
+                                                    <connections>
+                                                        <action selector="minusButtonTapped:" destination="Ibu-XF-MHo" eventType="touchUpInside" id="2ym-mR-Li0"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xY9-Im-vDn">
+                                                    <rect key="frame" x="266" y="19" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="➕"/>
+                                                    <connections>
+                                                        <action selector="plusButtonTapped:" destination="Ibu-XF-MHo" eventType="touchUpInside" id="whY-jT-MF6"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dc-x7-v1b">
+                                                    <rect key="frame" x="15" y="22" width="21" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="間客房" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETT-TU-yMv">
+                                                    <rect key="frame" x="73" y="24" width="52" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="countLabel" destination="8dc-x7-v1b" id="bf0-GP-cGi"/>
+                                            <outlet property="descriptionLabel" destination="ETT-TU-yMv" id="TnK-ac-7pN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="descriptionCell" rowHeight="70" id="Q0u-KN-qrF" customClass="DescriptionCell" customModule="AgodaClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="98" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q0u-KN-qrF" id="MiN-Vy-aJn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="兒童年齡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyA-y3-pAj">
+                                                    <rect key="frame" x="15" y="11" width="70" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="請輸入每位兒童的年齡以便尋找最適合的房型和床型組合。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbd-3Z-dbc">
+                                                    <rect key="frame" x="15" y="33" width="273" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="有帶小孩同行嗎？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3a-fj-5Nd">
+                                                    <rect key="frame" x="48" y="11" width="139" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="確實填寫小孩人數與年齡，我們就能幫你找出最划算的房價與房型喔！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsg-za-bXs">
+                                                    <rect key="frame" x="48" y="33" width="257" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-home-page-50-3" translatesAutoresizingMaskIntoConstraints="NO" id="BBd-WM-sTB">
+                                                    <rect key="frame" x="15" y="24" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="childAgeLabel" destination="MyA-y3-pAj" id="p13-a3-1VT"/>
+                                            <outlet property="ensureChildLabel" destination="rsg-za-bXs" id="pCk-bm-G1c"/>
+                                            <outlet property="houseImageView" destination="BBd-WM-sTB" id="xA2-4k-KJ0"/>
+                                            <outlet property="pleaseEnterChildAgeLabel" destination="dbd-3Z-dbc" id="Blz-Zq-FFW"/>
+                                            <outlet property="withChildLabel" destination="a3a-fj-5Nd" id="bvh-ze-6w0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="childDetailCell" rowHeight="70" id="x9n-sr-idC" customClass="ChildDetailCell" customModule="AgodaClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="168" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x9n-sr-idC" id="u4l-vw-RLV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="兒童" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVc-AJ-tAH">
+                                                    <rect key="frame" x="15" y="24" width="35" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="年齡(歲)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tX-NY-U4F">
+                                                    <rect key="frame" x="206" y="24" width="65" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="⌵" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJ4-h9-Nmq">
+                                                    <rect key="frame" x="293" y="24" width="20" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vrz-jR-CAh">
+                                <rect key="frame" x="0.0" y="606" width="375" height="61"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKV-aw-Jgc">
+                                        <rect key="frame" x="19" y="12" width="337" height="37"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="確定">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FKV-aw-Jgc" firstAttribute="centerY" secondItem="Vrz-jR-CAh" secondAttribute="centerY" id="FUG-6L-ezY"/>
+                                    <constraint firstItem="FKV-aw-Jgc" firstAttribute="centerX" secondItem="Vrz-jR-CAh" secondAttribute="centerX" id="MNU-ZF-VfC"/>
+                                    <constraint firstItem="FKV-aw-Jgc" firstAttribute="width" secondItem="Vrz-jR-CAh" secondAttribute="width" multiplier="0.9" id="Rj2-Dv-AKo"/>
+                                    <constraint firstItem="FKV-aw-Jgc" firstAttribute="height" secondItem="Vrz-jR-CAh" secondAttribute="height" multiplier="0.6" id="gd1-T7-MvV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vrz-jR-CAh" firstAttribute="leading" secondItem="dtP-b1-IOI" secondAttribute="leading" id="2Tx-aF-2C0"/>
+                            <constraint firstItem="noq-bb-8Sw" firstAttribute="leading" secondItem="dtP-b1-IOI" secondAttribute="leading" id="8BB-tb-V0p"/>
+                            <constraint firstItem="Vrz-jR-CAh" firstAttribute="top" secondItem="noq-bb-8Sw" secondAttribute="bottom" id="GdW-EA-Gn6"/>
+                            <constraint firstItem="Vrz-jR-CAh" firstAttribute="trailing" secondItem="dtP-b1-IOI" secondAttribute="trailing" id="LyY-BH-3yL"/>
+                            <constraint firstItem="noq-bb-8Sw" firstAttribute="trailing" secondItem="dtP-b1-IOI" secondAttribute="trailing" id="VAA-IU-iz7"/>
+                            <constraint firstItem="noq-bb-8Sw" firstAttribute="top" secondItem="dtP-b1-IOI" secondAttribute="top" id="Xls-2f-xks"/>
+                            <constraint firstItem="Vrz-jR-CAh" firstAttribute="bottom" secondItem="dtP-b1-IOI" secondAttribute="bottom" id="bWT-q1-YG1"/>
+                            <constraint firstItem="noq-bb-8Sw" firstAttribute="height" secondItem="WbU-kX-8dC" secondAttribute="height" multiplier="6.5:8" id="dBV-3l-5Oi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dtP-b1-IOI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="入住人數" id="aXs-X4-m7v">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="5dU-qd-lbs">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backToMainView:" destination="1Oq-3S-Fbj" id="w6r-Gp-W4u"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="memberTableView" destination="noq-bb-8Sw" id="lUi-d1-a0n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INA-Au-Zdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2523.75" y="133.09859154929578"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R6x-ZR-aPz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ahQ-q1-U58" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LKS-Qc-X2I">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gUa-7c-vVq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VDv-P7-K5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-311" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LVy-r4-APi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JUC-41-ta0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ym6-9p-rsf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Oq-3S-Fbj" kind="relationship" relationship="rootViewController" id="VsR-Py-Ycz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Vu-sQ-1k7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1564" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-home-page-50-3" width="50" height="50"/>
+        <image name="icons8-menu-50" width="25" height="25"/>
+        <image name="logo_" width="200" height="100"/>
+        <image name="pixta_27372189_M-1024x683" width="1024" height="683"/>
+    </resources>
+</document>
