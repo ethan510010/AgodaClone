@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60A2191205B5C8A0046F4CC /* ChooseChildAgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A2190205B5C8A0046F4CC /* ChooseChildAgeViewController.swift */; };
+		D60A2194205B94720046F4CC /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A2193205B94720046F4CC /* RatingViewController.swift */; };
 		D6211146205A1DDC005FBC88 /* DurationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6211145205A1DDC005FBC88 /* DurationCell.swift */; };
 		D6211148205A1E1D005FBC88 /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6211147205A1E1D005FBC88 /* PeopleCell.swift */; };
 		D621114A205A1E67005FBC88 /* RatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6211149205A1E67005FBC88 /* RatingCell.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D60A2190205B5C8A0046F4CC /* ChooseChildAgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseChildAgeViewController.swift; sourceTree = "<group>"; };
+		D60A2193205B94720046F4CC /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		D6211145205A1DDC005FBC88 /* DurationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationCell.swift; sourceTree = "<group>"; };
 		D6211147205A1E1D005FBC88 /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
 		D6211149205A1E67005FBC88 /* RatingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingCell.swift; sourceTree = "<group>"; };
@@ -53,6 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D60A2192205B5C970046F4CC /* ChooseChildAgeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D60A2190205B5C8A0046F4CC /* ChooseChildAgeViewController.swift */,
+			);
+			path = ChooseChildAgeViewController;
+			sourceTree = "<group>";
+		};
+		D60A2195205B947C0046F4CC /* RatingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D60A2193205B94720046F4CC /* RatingViewController.swift */,
+			);
+			path = RatingViewController;
+			sourceTree = "<group>";
+		};
 		D621114B205A2300005FBC88 /* MemberViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +123,8 @@
 				D6A82A54205A104D00C0F095 /* MainController */,
 				D6211150205A4525005FBC88 /* Model */,
 				D621114B205A2300005FBC88 /* MemberViewController */,
+				D60A2192205B5C970046F4CC /* ChooseChildAgeViewController */,
+				D60A2195205B947C0046F4CC /* RatingViewController */,
 				D6A82A232059FF4400C0F095 /* Assets.xcassets */,
 				D6A82A202059FF4400C0F095 /* Main.storyboard */,
 				D6A82A252059FF4400C0F095 /* LaunchScreen.storyboard */,
@@ -207,8 +229,10 @@
 				D621114A205A1E67005FBC88 /* RatingCell.swift in Sources */,
 				D6211153205A5677005FBC88 /* MemberCell.swift in Sources */,
 				D6A82A56205A107B00C0F095 /* LocationCell.swift in Sources */,
+				D60A2194205B94720046F4CC /* RatingViewController.swift in Sources */,
 				D6A82A1F2059FF4400C0F095 /* ViewController.swift in Sources */,
 				D6211155205A5686005FBC88 /* DescriptionCell.swift in Sources */,
+				D60A2191205B5C8A0046F4CC /* ChooseChildAgeViewController.swift in Sources */,
 				D621114D205A2359005FBC88 /* MembersViewController.swift in Sources */,
 				D6211148205A1E1D005FBC88 /* PeopleCell.swift in Sources */,
 				D6A82A1D2059FF4400C0F095 /* AppDelegate.swift in Sources */,

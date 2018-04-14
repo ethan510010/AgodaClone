@@ -9,7 +9,20 @@
 import UIKit
 
 class RatingCell: UITableViewCell {
-
+    
+    
+    @IBOutlet weak var ratingLabel: UILabel!
+    
+    func updateUI(model:InfoModel){
+        if model.scoreRating > 0 && model.scoreRating < 10 {
+            ratingLabel.text = "評鑑\(model.scoreRating)+"
+        }else if model.scoreRating == 10{
+            ratingLabel.text = "評鑑\(model.scoreRating)"
+        }else if model.scoreRating == 0{
+            ratingLabel.text = "自訂"
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

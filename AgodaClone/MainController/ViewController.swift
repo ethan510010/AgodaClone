@@ -8,12 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PassPeopleDelegate, RatingSliderDelegate {
+    //實作傳遞評價的protocol內方法
+    func ratingSliderDidScrolled(value: Float) {
+        self.infoModel.scoreRating = value
+        mainTableView.reloadData()
+    }
     
+    //實作傳遞成員資料的protocol內方法
+    func passPeopleData(model: InfoModel) {
+        //方法中要實做的其實只有把membersViewController的model傳遞過來這邊的model(本練習故意不用singleton因為考慮到之後可能會進行網路請求，頁面間的傳值還是以delegate為主)
+        self.infoModel = model
+        print("pass data success")
+        mainTableView.reloadData()
+    }
     
     @IBOutlet weak var logoView: UIView!
     
     @IBOutlet weak var mainTableView: UITableView!
+    
+    var infoModel = InfoModel(roomCount: 1, adultCount: 1, childCount: 0, scoreRating: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,11 +78,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
             durationCell.selectionStyle = .none
             return durationCell
         case [2,0]:
-            let peopleCell = tableView.dequeueReusableCell(withIdentifier: "peopleCell", for: indexPath)
+            let peopleCell = tableView.dequeueReusableCell(withIdentifier: "peopleCell", for: indexPath) as! PeopleCell
+            print("\(infoModel.roomCount)間房 \(infoModel.adultCount)位大人 \(infoModel.childCount)位小孩")
+            peopleCell.updateUI(model: infoModel)
             peopleCell.selectionStyle = .none
             return peopleCell
         case [3,0]:
-            let ratingCell = tableView.dequeueReusableCell(withIdentifier: "ratingCell", for: indexPath)
+            let ratingCell = tableView.dequeueReusableCell(withIdentifier: "ratingCell", for: indexPath) as! RatingCell
+            ratingCell.updateUI(model: infoModel)
             ratingCell.selectionStyle = .none
             return ratingCell
         default:
@@ -108,13 +125,42 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selected: \(indexPath)")
-        if indexPath == [3,0]{
+//        print("selected: \(indexPath)")
+        if indexPath == [2,0]{
 //            navigationController?.pushViewController(MembersViewController(), animated: true)
             DispatchQueue.main.async {
                 self.performSegue(withIdentifier: "pushMembersView", sender: nil)
             }
-            
+        }else if indexPath == [3,0]{
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "pushRatingView", sender: nil)
+            }
+        }
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "pushMembersView"{
+            if let NC = segue.destination as? UINavigationController{
+                if let memebersVC = NC.viewControllers.first as? MembersViewController{
+                    //下面一行是為了讓值可以從後面傳回來而設的delegate
+                    memebersVC.passPeopleDelegate = self
+                    //下面這行是要把這邊的值傳過去給MembersVC
+                    memebersVC.info = self.infoModel
+                }
+            }
+        }else if segue.identifier == "pushRatingView"{
+            if let NC = segue.destination as? UINavigationController{
+                if let ratingVC = NC.viewControllers.first as? RatingViewController{
+                    //下面一行是為了讓值可以從後面傳回來而設的delegate
+                    ratingVC.ratingSliderDelegate = self
+                    //
+                    ratingVC.ratingSliderScore = self.infoModel.scoreRating
+                }
+            }
         }
     }
 }
+
+
+

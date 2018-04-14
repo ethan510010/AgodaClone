@@ -17,21 +17,22 @@ class DescriptionCell: UITableViewCell {
     @IBOutlet weak var ensureChildLabel: UILabel!
     
     
-    func noChildDescription(){
-        withChildLabel.text = "有帶小孩同行嗎？"
-        houseImageView.isHidden = false
-        ensureChildLabel.text = "確實填寫小孩人數與年齡，我們就能幫你找出最划算的房價與房型喔！"
-        pleaseEnterChildAgeLabel.text = ""
-        childAgeLabel.text = ""
+    func childDescription(childCount:Int){
+        if childCount == 0{
+            withChildLabel.text = "有帶小孩同行嗎？"
+            houseImageView.isHidden = false
+            ensureChildLabel.text = "確實填寫小孩人數與年齡，我們就能幫你找出最划算的房價與房型喔！"
+            pleaseEnterChildAgeLabel.text = ""
+            childAgeLabel.text = ""
+        }else{
+            withChildLabel.text = ""
+            houseImageView.isHidden = true
+            ensureChildLabel.text = ""
+            pleaseEnterChildAgeLabel.text = "請輸入每位兒童的年齡以便尋找最適合的房型和床型組合。"
+            childAgeLabel.text = "兒童年齡"
+        }
     }
     
-    func withChildDescription(){
-        withChildLabel.text = ""
-        houseImageView.isHidden = true
-        ensureChildLabel.text = ""
-        pleaseEnterChildAgeLabel.text = "請輸入每位兒童的年齡以便尋找最適合的房型和床型組合。"
-        childAgeLabel.text = "兒童年齡"
-    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -28,6 +28,9 @@ class MemberCell: UITableViewCell {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    @IBOutlet weak var minusButton: UIButton!
+    @IBOutlet weak var plusButton: UIButton!
+    
     
     @IBAction func minusButtonTapped(_ sender: UIButton) {
         if let index = index, let infoModel = infoModel{
@@ -43,6 +46,17 @@ class MemberCell: UITableViewCell {
     }
     
     func updateUI(index:IndexPath, model:InfoModel){
+        
+        if model.roomCount == 1{
+            if index.row == 0{
+                minusButton.isEnabled = false
+            }
+        }else{
+            if index.row == 0{
+                minusButton.isEnabled = true
+            }
+        }
+        
         switch index.row {
         case 0:
             countLabel.text = "\(model.roomCount)"
